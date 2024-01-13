@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 10vh;
+    background: url('pshs2.png') no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.289);
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #448EE4;
+    transition: .5s;
+    
+}
+
+.navbar a:hover {
+    color: #448EE4;
+    transition: .5s;
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+
+center .pshs{
+    margin-top: 300px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.pisaylogo{
+    height: 50px;
+}
+
+.logo{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding-right: 200px;
+    font-size: 32px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo:hover{
+    color: #448EE4;
+    transition: .5s;
+}
+
+.c_title {
+    font-weight: bold;
+    margin-top: 120px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+.c_p{
+    width: 100vh;
+    background-color: #448fe462;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    position: absolute;
+}
+.section_christine{
+    position: absolute;
+    transition: 0.5s;
+}
+
+.section_christine:hover{
+    transform: scale(1.1);
+}
+.s_title {
+    font-weight: bold;
+    margin-top: 120px;
+    margin-left: 150px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.s_p {
+    width: 100vh;
+    background-color: #448fe462;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    transition: 0.5s;
+}
+
+.section_shaina{
+    margin-left: 750px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.section_shaina:hover{
+    transform: scale(1.1);
+}
+
+
+
+.christineimg {
+    height: 100px;
+    float: right;
+    position: relative;
+    border-radius: 10px;
+}
+.shantiimg {
+    height: 100px;
+    float: right;
+    position: relative;
+    border-radius: 10px;
+}

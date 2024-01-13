@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 10vh;
+    background: url('pshs2.png') no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.289);
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #448EE4;
+    transition: .5s;
+    
+}
+
+.navbar a:hover {
+    color: #448EE4;
+    transition: .5s;
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+
+center .pshs{
+    margin-top: 300px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.pisaylogo{
+    height: 50px;
+}
+
+.logo{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding-right: 200px;
+    font-size: 32px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo:hover{
+    color: #448EE4;
+    transition: .5s;
+}
+
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px; 
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+#image-label {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 220px;
+}
